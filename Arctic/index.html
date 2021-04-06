@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
+        <title>Arctic Travel Agency</title>
+        <link rel="database" href="conn.php">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    </head>
+    <body>
+        <div class="header">
+        <div class="container">
+              <div class="navbar">
+            <div class="logo">
+                <a href="index.html" class="bttn">Arctic Travel Agency</a>
+            </div> 
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotel.html">Hotels</a></li>
+                    <li><a href="car.html">Cars</a></li>
+                    <li><a href="flight.html">Flights</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="account.html">Sign in</a></li>
+                    <li><a href="logout.php">Log Out</a></li>
+                </ul>
+            </nav>
+               <a href="hotel.html" class="bttn">Book Now &#9754;;</a> 
+               <img src="imgg/menu.png" class="menu " onclick="menutoggle()">      
+        </div>
+            <div class="row ">
+                      <div class="col-2">
+                          <h1>Your Leisure<br> Is Guaranteed!</h1>
+                          <p>Try Artic Now<br> And You Will Not<br> Be Dissapointed</p>
+                          <a href="" class="btn">Explore Now</a>
+                      </div>
+                      <div class="col-2">
+                          <img src="imgg/hotel11.jpg" width="500px"> 
+                      </div>
+                  </div>
+        </div>
+        </div>        
+      <!--- Featured categories --->
+        <div class="categories">
+            <div class="small-container">
+              <div class="row">
+               <div class="col-3">
+                <img src="imgg/ass.png">
+               </div>
+               <div class="col-3">
+                <img src="imgg/wedd.png">
+               </div>
+               <div class="col-3">
+                <img src="imgg/conf.png">
+               </div>
+                <div class="col-3">
+                <img src="imgg/tour.png">
+               </div>
+                <div class="col-3">
+                <img src="imgg/biz.png">
+               </div>
+            </div> 
+        </div >
+    </div>
+        
+         <!--- Featured luxuries --->
+        <div class="small-container">
+             <h2 class="title">Featured Luxuries</h2>
+            <div class="row">
+              <div class="col-4">
+                <img src="imgg/hotel1.jpg">
+                  <h4>Beautiful and Attractive Scenes</h4>
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel2.jpg">
+                    <h4>Big and Clean swimming Pools</h4>
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel4.jpg">
+                    <h4>Extreme Comfortable Meeting Rooms</h4>
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel5.jpg">
+                    <h4>Vast Open Outdoor Relaxing Platforms</h4>
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel7.jpg">
+                    <h4>Affordable Hotels For Couples</h4>
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel8.jpg">
+                  <h4>Big and Well Lit Meeting rooms</h4>  
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel9.jpg">
+                    <h4>Collection Of the Best Hotels</h4>
+                </div>
+                <div class="col-4">
+                <img src="imgg/hotel10.jpg">
+                    <h4>Affordable and Luxurious Rooms</h4>
+                </div>
+            </div>
+        </div>
+        <!--- Footer --->
+        <div class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                  <h5><a href="appstore.com">Download Our App for Android & IOS</a></h5>
+                  <div class="app-logo">
+                   <a href="playstore.com"> <img src="imgg/google2.png"></a>
+                    <a href="appstore.com">  <img src="imgg/app2.png"></a>
+                  </div>
+                </div>
+                <div class="footer-col-2">
+                 <a href="playstore.com" class="bttn">ARC &#9754;;</a> 
+                 <p>Our Goal Is To Ensure Each of We serve Our Customers To Their Satisfaction</p>
+                </div>
+                <div class="footer-col-3 ">
+                  <h3>Useful Links</h3>
+                  <ul>
+                      <li><a href="hotel.html">Book A Hotel Room</a></li>
+                      <li><a href="car.html">Hire A Car</a></li>
+                      <li><a href="flight.html">Book Flight</a></li>
+                      <li><a href="account.html">Sign-Up</a></li>                   
+                   </ul>
+                </div>
+                <div class="footer-col-4 ">
+                  <h3>Follow Us</h3>
+                  <ul>
+                     <li><a href="facebook.com">Facebook</a></li>
+                      <li><a href="twitter.com">Twitter</a></li>
+                      <li><a href="instagram.com">Instagram</a></li>
+                      <li><a href="youtube.com">You Tube</a></li>                               
+                  </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020- Created By Caleb Munene <br> All Rights Reserved @arctic.com</p>
+            </div>
+        </div>
+        <script>
+          var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if( MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                     MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    </body>
+</html>

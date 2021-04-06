@@ -1,0 +1,132 @@
+<?php 
+ include('conn.php');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
+    <title>Our Car Page</title>
+
+    <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,700;0,900;1,500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    </head>
+<body>
+  <div class="header">
+    <div class="container">
+              <div class="navbar">
+            <div class="logo">
+                <a href="index.html" class="bttn">Arctic Travel Agency</a>
+                  </div>
+                       <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hotel.html">Hotels</a></li>
+                    <li><a href="car.html">Cars</a></li>
+                    <li><a href="flight.html">Flights</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <li><a href="account.html">Sign in</a></li>
+                </ul>
+            </nav>
+               <a href="car.html" class="bttn">Book Now &#9754;;</a> 
+               <img src="imgg/menu.png" class="menu " onclick="menutoggle()">      
+        </div>
+    </div>
+  </div>
+        <div class="car-page">
+            <h4>Welcome To Our Cars Page</h4>
+            <p>You Can Hire Any Type Of Car You Want <br> And We Shall Deliver It You At No Cost</p>
+            <h4>Fill Out The Form And Lets Handle The Rest For You <br> Lets Go!!</h4>
+            <h4>Our Car Deals Are The Best!!</h4>
+         <div class="container">
+            <div class="row">
+               <div class="col-2">
+                  <div class="car-container">
+                 <form action="car.php" method="POST">
+                    <h4>Hire A Car Of Your Choice<br> Only In Arctic</h4>
+                    <label>Pick-up-location</label>
+                    <br>
+                     <input type="text" name="address" placeholder="City,Airport or Address" required>
+                     <br>
+                     <label>Pick-Up-Date</label>
+                     <br>
+                     <input type="date" name="p_date" placeholder="Pick Up Date" required>
+                     <br>
+                     <label>Pick-Up-Time</label>
+                     <br>
+                     <input type="time" name="p_time" placeholder="Pick Up Time" required>
+                     <br>
+                     <label>Drop-Off-Date</label>
+                     <br>
+                     <input type="date" name="d_date" placeholder="Drop Off Date" required>
+                     <br>
+                      <label>Drop-Off-time</label>
+                      <br>
+                     <input type="time" name="d_time" placeholder="Drop Off Time" required>
+                     <br>
+                      <button type="submit" name="bttn" class="bttn">Search</button>
+                      <h4>Our Core Goal Is To Make Your Life Easier <br>Gives Us A Feedback Based On The Services We Rendered To You <br>Here at Arctic We Dearly Appreciate Your Feedback</h4>
+                    </form>
+                </div>
+               </div>
+                <div class="col-2">
+                <img src="imgg/car5.jpg" width="700px">
+             </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer">
+        <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                 <h5><a href="appstore.com">Download Our App for Android & IOS</a></h5>
+                  <div class="app-logo">
+                    <a href="playstore.com"><img src="imgg/google2.png"></a>
+                     <a href="appstore.com"> <img src="imgg/app2.png"></a>
+                  </div>
+                </div>
+                <div class="footer-col-2">
+                 <a href="playstore.com" class="bttn">ARC &#9754;;</a> 
+                 <p>Our Goal Is To Ensure Each of We serve Our Customers To Their Satisfaction</p>
+                </div>
+                <div class="footer-col-3 ">
+                  <h3>Useful Links</h3>
+                  <ul>
+                      <li><a href="hotel.html">Book A Hotel Room</a></li>
+                      <li><a href="car.html">Hire A Car</a></li>
+                      <li><a href="flight.html">Book Flight</a></li>
+                      <li><a href="account.html">Sign-Up</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4 ">
+                  <h3>Follow Us</h3>
+                  <ul>
+                    <li><a href="facebook.com">Facebook</a></li>
+                      <li><a href="twitter.com">Twitter</a></li>
+                      <li><a href="instagram.com">Instagram</a></li>
+                      <li><a href="youtube.com">You Tube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020- Created By Caleb Munene <br> All Rights Reserved @arctic.com </p>
+            </div>
+        </div>
+        <script>
+          var MenuItems = document.getElementById("MenuItems");
+            MenuItems.style.maxHeight = "0px";
+            function menutoggle(){
+                if( MenuItems.style.maxHeight == "0px"){
+                    MenuItems.style.maxHeight = "200px";
+                }
+                else{
+                     MenuItems.style.maxHeight = "0px";
+                }
+            }
+        </script>
+    
+    </body>
+
+</html>
